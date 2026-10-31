@@ -94,7 +94,7 @@ Ahora el conjunto de trayectorias hechas con las funciones descritas anteriormen
 
 Por último se usan funciones comunes en los lenguajes de programación para revisar si se cumple una condición (`IF`), crear un bucle mientras se cumpla una condición (`WHILE`),poner una entrada en 0 (`RESET`) o en 1 (`RESET`) y para esperar un determinado tiempo en segundos (`WaitTime`)
 
-El código completo se encuentra [aquí](./Lab1_Codigo_robot_studio/Controller%20Data/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod)
+El código completo se encuentra [aquí](./Lab1_Codigo_robot_studio/Controller%20Data/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod) o también si lo desea el [diagrma de flujo](Diagrama_Flujo.pdf).
 
 ### Entradas y salidas digitales
 
