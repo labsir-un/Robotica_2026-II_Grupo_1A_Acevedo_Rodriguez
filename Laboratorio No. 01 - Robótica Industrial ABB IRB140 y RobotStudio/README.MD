@@ -1,8 +1,8 @@
 # Laboratorio No. 01 - Robótica Industrial ABB IRB140 y RobotStudio
 ## Introducción
-Este laboratorio tiene como propósito el desarrollo de un programa para el robot ABB IRB 140 a través del software Robot Studio,con el fin que cuando el usuario lo indique, mediante entradas digitales administradas en el teach pendant, desarolle una de las siguientes 3 rutinas:
+Este laboratorio tiene como propósito el desarrollo de un programa para el robot ABB IRB 140 a través del software Robot Studio, con el fin de que cuando el usuario lo indique, mediante entradas digitales administradas en el teach pendant, desarrolle una de las siguientes 3 rutinas:
 
-1. La decoración de un pastel, cuando el usuario lo indique, en donde el programa tambien se hace cargo de llevar el pastel al workspace del robot mediante el uso de una banda transportadora y posterior a la decoración del pastel el retiro del pastel del workspace del robot.
+1. La decoración de un pastel, cuando el usuario lo indique, en donde el programa también se hace cargo de llevar el pastel al workspace del robot mediante el uso de una banda transportadora y posterior a la decoración del pastel el retiro del pastel del workspace del robot.
 2. Posicionar el robot de forma tal que el operario pueda hacer el cambio de la herramienta y el mantenimiento del robot de manera cómoda.
 3. Hacer una rutina para que el robot farmee aura.
 
@@ -14,19 +14,19 @@ El diseño de la herramienta se hizo de manera secuencial desde el flanche. En e
 <img src="./imágenes/Acople Flanche.png" alt="Acople flanche" width="600">
 <p>
 
-Lo segundo es diseñar el cuerpo de la herramienta, esta se diseña para permitir una escritura cómoda, imitando el angulo en el que se suele agarrar el marcador de alrrededor de 60° respecto a la horizontal, con la rosca respectiva para unirse al acople del flanche y que la hace facil de intercambiar, además de otra rosca que permite poner en su interior el marcador, para mas detalles acceda a [especificaciones geométricas](./Herramienta/Planos/Cuerpo_herramienta.pdf).
+Lo segundo es diseñar el cuerpo de la herramienta, esta se diseña para permitir una escritura cómoda, imitando el ángulo en el que se suele agarrar el marcador de alrededor de 60° respecto a la horizontal, con la rosca respectiva para unirse al acople del flanche y que la hace fácil de intercambiar, además de otra rosca que permite poner en su interior el marcador, para más detalles acceda a [especificaciones geométricas](./Herramienta/Planos/Cuerpo_herramienta.pdf).
 
 <p align="center">
 <img src="./imágenes/Herramienta.png" alt="Cuerpo de la herramienta" width="600">
 <p>
 
-Lo tercero es diseñar la tapa para asegurar el marcador, con un acople roscado al cuerpo, en ella se pone un resorte cuya rigidez se deja a elección del fabricante, pero debe de tener en cuenta que la función del resorte es amortiguar impactos en la punta del marcador, por lo que se recomienda no excederse con la rigidez de este. Los detalles geométicos de la tapa se encuentran [aquí](./Herramienta/Planos/Tapa.pdf)
+Lo tercero es diseñar la tapa para asegurar el marcador, con un acople roscado al cuerpo, en ella se pone un resorte cuya rigidez se deja a elección del fabricante, pero debe de tener en cuenta que la función del resorte es amortiguar impactos en la punta del marcador, por lo que se recomienda no excederse con la rigidez de este. Los detalles geométricos de la tapa se encuentran [aquí](./Herramienta/Planos/Tapa.pdf)
 
 <p align="center">
 <img src="./imágenes/Tapa.png" alt="Tapa" width="600">
 <p>
 
-Por último se ensamblan todos los compoenentes incluido un modelo del marcador, para poder exportar el conjunto como un archivo [.sat](./Herramienta/Herramienta.sat), necesario para crear la herramienta en robot studio.
+Por último se ensamblan todos los componentes incluido un modelo del marcador, para poder exportar el conjunto como un archivo [.sat](./Herramienta/Herramienta.sat), necesario para crear la herramienta en robot studio.
 
 <p align="center">
 <img src="./imágenes/Assembly 1.png" alt="Ensamble" width="600">
@@ -36,7 +36,7 @@ Por último se ensamblan todos los compoenentes incluido un modelo del marcador,
 
 ## Vista de planta
 
-En el proceso del diseño de las trayectorias es fundamental tener en cuenta el entorno del robot, con el fin de evitar choques con objetos no contemplados en el software. Por lo que tras una calibración del workspace, se ubica la posción de la banda y el pastel relativos al robot como puede verse a continuación:
+En el proceso del diseño de las trayectorias es fundamental tener en cuenta el entorno del robot, con el fin de evitar choques con objetos no contemplados en el software. Por lo que tras una calibración del workspace, se ubica la posición de la banda y el pastel relativos al robot como puede verse a continuación:
 
 <p align="center">
 <img src="./imágenes/Planta.png" alt="Planta" width="600">
@@ -44,7 +44,7 @@ En el proceso del diseño de las trayectorias es fundamental tener en cuenta el 
 
 ## Código del RAPID
 
-Una vez se establece correctamente el entorno del robot (Aunque el workspace necesita iteración más adelante debido a la incertidumbre introducida por la banda) se pueden establecer todos los targets necesarios para crear las trayectorias, para facilitar esta tarea se usa el generador de texto de inventor, junto con el contorno del dibujo que se quiere plasmar el el pastel para generar una extrución en el pastel que ayuda a elegir los puntos con mayor presición.
+Una vez se establece correctamente el entorno del robot (aunque el workspace necesita iteración más adelante debido a la incertidumbre introducida por la banda) se pueden establecer todos los targets necesarios para crear las trayectorias, para facilitar esta tarea se usa el generador de texto de Inventor, junto con el contorno del dibujo que se quiere plasmar en el pastel para generar una extrusión en el pastel que ayuda a elegir los puntos con mayor precisión.
 
 <p align="center">
 <img src="./imágenes/Extrusión_imágen.jpeg" alt="Extrusión decoración pastel" width="600">
@@ -98,7 +98,7 @@ El código completo se encuentra [aquí](./Lab1_Codigo_robot_studio/Controller%2
 
 ### Entradas y salidas digitales
 
-#### Entradas digiales
+#### Entradas digitales
 El código cuenta con 3 entradas digitales, cada una habilita una rutina, pero deben de esperar a que se acabe de ejecutar la anterior para poder ser leídas, en donde `DI_01` activa la rutina uno como se ve en este fragmento del código:
 ```rapidip
             IF DI_01=1 THEN
@@ -118,7 +118,7 @@ La segunda entrada digital es `DI_02` esta se encarga de activar la rutina de ma
                 ENDIF
 ```
 
-Y por último `DI_03` que es la entrada que habilita la rutina de Farmear aura como se muesta a continuación:
+Y por último `DI_03`, que es la entrada que habilita la rutina de Farmear aura, como se muestra a continuación:
 
 ```rapidip
         ELSEIF DI_03=1 THEN
@@ -130,25 +130,25 @@ Y por último `DI_03` que es la entrada que habilita la rutina de Farmear aura c
 ```
 #### Salidas digitales
 
-Se cuentan con 5 salidas digitales en total, 3 hacía una HMI (`DO_01`,`DO_02` y `DO_03`) que encienden o apagan indicadores para que el operador sepa cuando se esta o no ejecutando una de las 3 rutinas respectivamente. Las otras 2 salidas se usan para utilizar la banda, en donde `BWD_Conveyor` habilita el motor de la cinta y `FWD_Conveyor` indica el sentido de giro del motor, por lo que se juega con estas dos entradas para llevar la caja hacía el robot. 
+Se cuentan con 5 salidas digitales en total: 3 hacia una HMI (`DO_01`,`DO_02` y `DO_03`) que encienden o apagan indicadores para que el operador sepa cuándo se está o no ejecutando una de las 3 rutinas respectivamente. Las otras 2 salidas se usan para utilizar la banda, en donde `BWD_Conveyor` habilita el motor de la cinta y `FWD_Conveyor` indica el sentido de giro del motor, por lo que se juega con estas dos entradas para llevar la caja hacia el robot. 
 
 #### Simulación de la banda 
 
-Dado que la banda posee una dinámica a considerar, la cual es la velocidad de esta. Para saber cuanto tiempo hay que dejarla encendida con el fin de  que el pastel llegue lo más cerca posible al workspace establecido se mide su velocidad experimentalmente su perfil de velocidad a partir de la grbación desde la parte superior de esta de un objeto en moviento y mediante tracker se obtiene la siguiente gráfica:
+Dado que la banda posee una dinámica a considerar, la cual es la velocidad de esta. Para saber cuánto tiempo hay que dejarla encendida con el fin de que el pastel llegue lo más cerca posible al workspace establecido se mide experimentalmente su perfil de velocidad a partir de la grabación desde la parte superior de esta de un objeto en movimiento y mediante un tracker se obtiene la siguiente gráfica:
 
 <p align="center">
 <img src="./imágenes/Perfil_velocidad_banda.png" alt="Perfil" width="600">
 <p>
 
-Con este se establece el tiempo necesario para llegar a la posicíon indicada, ya que la velocidada de crucero es de 0.328 m/s aproximadamente y las rampas tienen una pendinte de alrededor de 0.27 m/s².
+Con esto se establece el tiempo necesario para llegar a la posición indicada, ya que la velocidad de crucero es de 0.328 m/s aproximadamente y las rampas tienen una pendiente de alrededor de 0.27 m/s².
 
 Para la simulación se crea un smart component que imita el comportamiento de la banda y su lógica tal y como se muestra:
 
 <p align="center">
-<img src="./imágenes/Smart_component.jpeg" alt="Smart component" width="600">
+<img src="./imágenes/Smart_component.jpeg" alt="Smart component" width="1200">
 <p>
 
-Estos cálculos permitieron calcular los delays que se pueden ver en secciones comoe stas del código:
+Estos cálculos permitieron calcular los delays que se pueden ver en secciones como estas del código:
 ```rapidip
         IF DI_01=1 THEN
                 
@@ -163,7 +163,11 @@ Estos cálculos permitieron calcular los delays que se pueden ver en secciones c
 
 Una vez simulado el código e iterado la posición del workspace, se sube el código al controlador del robot mediante conexión WiFi, y se depura el código paso a paso hasta estar seguros que las rutinas sirven por completo, Una vez rectificado se evidencia el funcionamiento del código completo:
 
-<iframe width="1403" height="789" src="https://www.youtube.com/embed/3qK06tKSGvg" title="Decoración de Pastel - Equipo: Trayectorias, Entradas y Salidas Digitales (ABB IRB 140)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p align="center">
+  <a href="https://youtu.be/3qK06tKSGvg">
+    <img src="https://youtu.be/3qK06tKSGvg" alt="Decoración de Pastel - ABB IRB 140" width="700">
+  </a>
+</p>
 
 
 
