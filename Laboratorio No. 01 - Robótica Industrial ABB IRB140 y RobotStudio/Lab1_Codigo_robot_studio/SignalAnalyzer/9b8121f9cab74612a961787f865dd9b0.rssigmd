@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Metadata Version="1">
+  <Id>9b8121f9cab74612a961787f865dd9b0</Id>
+  <Name>Recording-42</Name>
+  <EventCount>1</EventCount>
+  <StartedUtc>2026-10-23T07:00:16.3389342Z</StartedUtc>
+  <EndedUtc>2026-10-23T07:03:18.4787689Z</EndedUtc>
+  <TotalTime>0</TotalTime>
+  <Signals />
+  <Sources>
+    <Source type="Station" id="{ab8ee62c-f916-44d2-916a-68072426e559}" displayName="Lab1" />
+  </Sources>
+</Metadata>
