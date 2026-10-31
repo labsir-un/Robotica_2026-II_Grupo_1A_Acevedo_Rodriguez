@@ -83,7 +83,7 @@ Como se puede observar, comparte exactamente los mismos argumentos que `MoveJ`.
 Esta función genera un desplazamiento a lo largo de una curva circular desde el punto actual hasta el destino. Para poder trazar la trayectoria geométrica, necesita un argumento extra llamado **PuntoCentral** (un punto intermedio en el espacio que el controlador utiliza para calcular el radio y la curvatura exacta). 
 
 Su sintaxis es:
-```rapidip
+```rapid
 MoveC PuntoCentral, PuntoDestino, Velocidad, Zona, Herramienta [\WObj];
 ```
 El resto de sus argumentos funcionan de la misma manera que en las instrucciones anteriores.
@@ -106,7 +106,7 @@ El código cuenta con 3 entradas digitales, cada una habilita una rutina, pero d
                 rutina de decoración del pastel...
 ```
 La segunda entrada digital es `DI_02` esta se encarga de activar la rutina de mantenimiento y se necesita que esta se apague para que se acabe la rutina como se ve a continuación:
-```rapidip
+```rapid
             ELSEIF DI_02=1 THEN
                 SET DO_02;
                 Mantenimiento_p;
@@ -120,7 +120,7 @@ La segunda entrada digital es `DI_02` esta se encarga de activar la rutina de ma
 
 Y por último `DI_03`, que es la entrada que habilita la rutina de Farmear aura, como se muestra a continuación:
 
-```rapidip
+```rapid
         ELSEIF DI_03=1 THEN
                 SET DO_03;
                 Real_Home;
@@ -149,7 +149,7 @@ Para la simulación se crea un smart component que imita el comportamiento de la
 <p>
 
 Estos cálculos permitieron calcular los delays que se pueden ver en secciones como estas del código:
-```rapidip
+```rapid
         IF DI_01=1 THEN
                 
             SET BWD_Conveyor;
@@ -164,8 +164,8 @@ Estos cálculos permitieron calcular los delays que se pueden ver en secciones c
 Una vez simulado el código e iterado la posición del workspace, se sube el código al controlador del robot mediante conexión WiFi, y se depura el código paso a paso hasta estar seguros que las rutinas sirven por completo, Una vez rectificado se evidencia el funcionamiento del código completo:
 
 <p align="center">
-  <a href="https://youtu.be/3qK06tKSGvg">
-    <img src="https://youtu.be/3qK06tKSGvg" alt="Decoración de Pastel - ABB IRB 140" width="700">
+  <a href="https://youtu.be/3qK06tKSGvg" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/3qK06tKSGvg/maxresdefault.jpg" alt="Decoración de Pastel - ABB IRB 140" width="700">
   </a>
 </p>
 
