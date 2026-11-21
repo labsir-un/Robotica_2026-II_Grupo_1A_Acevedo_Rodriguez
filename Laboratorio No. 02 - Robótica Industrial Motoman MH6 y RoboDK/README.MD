@@ -4,7 +4,7 @@
 # 🤖 Laboratorio No. 02 — Robótica Industrial
 ## Análisis y Operación del Manipulador Motoman MH6
 
-**Robótica 2026-I · Universidad Nacional de Colombia**
+**Robótica 2026-II · Universidad Nacional de Colombia**
 
 ![Robot](https://img.shields.io/badge/Robot-Motoman%20MH6-blue?style=for-the-badge)
 ![Software](https://img.shields.io/badge/Software-RoboDK-orange?style=for-the-badge)
