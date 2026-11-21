@@ -6,10 +6,10 @@
 
 **Robótica 2026-I · Universidad Nacional de Colombia**
 
-![Robot](https:/Img.shields.io/badge/Robot-Motoman%20MH6-blue?style=for-the-badge)
-![Software](https:/Img.shields.io/badge/Software-RoboDK-orange?style=for-the-badge)
-![Lenguaje](https:/Img.shields.io/badge/Lenguaje-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Estado](https:/Img.shields.io/badge/Estado-En%20desarrollo-yellow?style=for-the-badge)
+![Robot](https://img.shields.io/badge/Robot-Motoman%20MH6-blue?style=for-the-badge)
+![Software](https://img.shields.io/badge/Software-RoboDK-orange?style=for-the-badge)
+![Lenguaje](https://img.shields.io/badge/Lenguaje-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow?style=for-the-badge)
 
 </div>
 
