@@ -6,10 +6,10 @@
 
 **Robótica 2026-I · Universidad Nacional de Colombia**
 
-![Robot](https://img.shields.io/badge/Robot-Motoman%20MH6-blue?style=for-the-badge)
-![Software](https://img.shields.io/badge/Software-RoboDK-orange?style=for-the-badge)
-![Lenguaje](https://img.shields.io/badge/Lenguaje-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow?style=for-the-badge)
+![Robot](https:/Img.shields.io/badge/Robot-Motoman%20MH6-blue?style=for-the-badge)
+![Software](https:/Img.shields.io/badge/Software-RoboDK-orange?style=for-the-badge)
+![Lenguaje](https:/Img.shields.io/badge/Lenguaje-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Estado](https:/Img.shields.io/badge/Estado-En%20desarrollo-yellow?style=for-the-badge)
 
 </div>
 
@@ -115,7 +115,7 @@ El cuadro anterior es unicamente de los manipuladores, sin embargo el Motoman in
 
 | Home 1 | Home 2 |
 |:---:|:---:|
-| ![home1](/Img/home1.png) | ![home2](/Img/home2.png) |
+| ![home1](Img/home1.png) | ![home2](Img/home2.png) |
 
 ### ¿Cuál posición es mejor?
 
@@ -181,7 +181,7 @@ Otros sistemas disponibles con `[COORD]`: **Cylindrical** (cilíndrico), **Tool*
 
 📷 _Inserten fotos del teach pendant con las teclas señaladas:_
 
-![pendant](./img/pendant.jpg)
+![pendant](.Img/pendant.jpg)
 
 ---
 
@@ -282,9 +282,9 @@ flowchart TD
 
 ## 8. 🗺️ Plano de planta
 
-[Plano de planta detallado](/Img/Plano_de_planta.pdf)
+[Plano de planta detallado](Img/Plano_de_planta.pdf)
 
-![Plano de planta RoboDK](/Img/Planta.png)
+![Plano de planta RoboDK](Img/Planta.png)
 
 
 ---
@@ -306,7 +306,7 @@ y = r · sin(θ)
 
 Este corresponde a un coroide, que se puede ver a continuación 
 
-![Coroide](/Img/Coroide.png)
+![Coroide](Img/Coroide.png)
 
 
 ### 9.2 Parámetros
